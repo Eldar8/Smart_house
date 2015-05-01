@@ -1,7 +1,7 @@
 package ProjekatOOAD;
 
 
-public class SistemZaGaraznaVrata extends Izvrsni_sistem {
+public class SistemZaGaraznaVrata  extends Izvrsni_sistem{
 
     boolean auto_regulacija = false;
     boolean manual_regulacija = false;

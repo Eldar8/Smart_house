@@ -4,11 +4,12 @@ package ProjekatOOAD;
 public class SistemZaVideoNadzor extends Izvrsni_sistem {
 
     boolean ukljucensenzor = false;
-    int pozicijakamere;
+    float pozicijakamere;
 
-    public SistemZaVideoNadzor(String tipsis, int poo){
+    public SistemZaVideoNadzor(String tipsis, float pos){
 
         super(tipsis);
+        this.pozicijakamere = pos;
     }
 
     public void UkljuciNadzor(){
@@ -17,9 +18,10 @@ public class SistemZaVideoNadzor extends Izvrsni_sistem {
 
     }
 
-    public void PostaviPozicijuKamere(int pos){
+    public void PostaviPozicijuKamere(float pos){
 
         this.pozicijakamere = pos;
 
     }
+
 }
