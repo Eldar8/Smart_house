@@ -9,7 +9,7 @@ public class SistemZaOsvjetljenje extends Izvrsni_sistem {
         super(tip);
     }
 
-    public void UkljuciSistem(){
+    public void UpaliSvjetla(){
 
         this.upaljeno = true;
     }

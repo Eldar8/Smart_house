@@ -29,4 +29,18 @@ public class SistemZaUlaznaVrata extends Izvrsni_sistem {
 
         return this.manual_regulacija;
     }
+
+    public void DajPodatkeOSistemu(){
+
+        if(AktivnaAutoRegulacija())
+            System.out.println("Autoregulacija sistema je ukljucena.");
+        else
+            System.out.println("Autoregulacija sistema nije ukljucena.");
+
+        if(AktivnaManualRegulacija())
+            System.out.println("Manualregulacija sistema je ukljucena.");
+        else
+            System.out.println("Manualregulacija sistema nije ukljucena.");
+    }
+
 }

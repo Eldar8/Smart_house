@@ -14,4 +14,11 @@ public class ProtivprovalniAlarmniSistem extends Izvrsni_sistem {
 
         this.detekcija_kretanja = true;
     }
+    public void DajPodatkeOSistemu(){
+
+        if(detekcija_kretanja)
+            System.out.println("Detektor kretanja je ukljucen.");
+        else
+            System.out.println("Detektor kretanja nije ukljucen.");
+    }
 }

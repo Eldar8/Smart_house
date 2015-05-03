@@ -27,5 +27,19 @@ public class ProtivpozarniAlarmniSistem extends Izvrsni_sistem {
         this.prskalice = true;
     }
 
+    public void DajPodatkeOSistemu(){
+
+        System.out.println("Gornja granicna temp je " + this.gornja_granica_temp);
+        System.out.println("Gornja granicna dima je " + this.gornja_granica_dim);
+        if(this.prskalice)
+            System.out.println("Prskalice su ukljucene.");
+        else
+            System.out.println("Prskalice nisu ukljucene.");
+        if(this.mjerenje_temp)
+            System.out.println("Mjerac temperature je ukljucen.");
+        else
+            System.out.println("Mjerac temperature nije ukljucen.");
+
+    }
 
 }

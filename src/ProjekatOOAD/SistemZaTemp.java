@@ -21,4 +21,17 @@ public class SistemZaTemp extends Izvrsni_sistem {
 
         this.auto_regulacija = true;
     }
+
+    public void DajPodatkeOSistemu(){
+
+        System.out.println("Trenutna temperatura je " + trenutna_temp + " stepena Celzijusa.");
+        System.out.println("Donja granicna temperatura je " + donja_granica + " stepena Celzijusa.");
+        System.out.println("Gornja granicna temperatura je " + gornja_granica + " stepena Celzijusa.");
+
+        if(auto_regulacija)
+            System.out.println("Autoregulacija temperature je ukljucena.");
+        else
+            System.out.println("Autoregulacija temperature nije ukljucena.");
+
+    }
 }
